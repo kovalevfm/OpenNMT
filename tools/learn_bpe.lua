@@ -14,6 +14,24 @@ local options = {
     [[The number of merge operations to learn.]]
   },
   {
+    '-t', false,
+    [[Tokenize the input with tokenizer, the same options as tokenize.lua,
+      but only `-mode` is taken into account for BPE training.]]
+  },
+  {
+    '-mode', 'conservative',
+    [[Define how aggressive should the tokenization be. `aggressive` only keeps sequences
+      of letters/numbers, `conservative` allows a mix of alphanumeric as in: "2,000", "E65",
+      "soft-landing", etc.]],
+    {
+      enum = {'conservative', 'aggressive'}
+    }
+  },
+  {
+    '-segment_case', false,
+    [[Segment case feature, splits AbC to Ab C to be able to restore case]]
+  },
+  {
     '-lc', false,
     [[Lowercase input tokens before learning BPE.]]
   },
