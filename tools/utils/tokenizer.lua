@@ -404,6 +404,7 @@ local function getTokens(t, joiner)
   return fields
 end
 
+
 function tokenizer.detokenize(line, opt)
   local dline = ""
   local tokens = getTokens(line, opt.joiner)
