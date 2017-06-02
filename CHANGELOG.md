@@ -48,7 +48,7 @@
 * `-sample_tgt_vocab` option is renamed `-sample_vocab` and is extended to language models
 
 ### New features
-
+ 
 * Implement inference for language models for scoring or sampling
 * Support variational dropout and dropout on source sequence
 * Support several validation metrics: loss, perplexity, BLEU and Damerau-Levenshtein edit ratio
