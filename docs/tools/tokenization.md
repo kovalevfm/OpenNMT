@@ -43,7 +43,7 @@ Two options provide specific tokenization depending on alphabet:
 `-segment_case` feature enables tokenizer to segment words into subwords with one of 3 casing types (truecase ('House'), uppercase ('HOUSE') or lowercase ('house')), which helps  restore right casing during  detokenization. This feature is especially useful for texts with a signficant number of words with mixed casing ('WiFi' -> 'Wi' and 'Fi').
 ```text
 WiFi --> wi￨C fi￨C
-TVs --> tv￨C s￨l
+TVs --> tv￨U s￨L
 ```
 
 ## BPE
