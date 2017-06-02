@@ -39,6 +39,14 @@ Two options provide specific tokenization depending on alphabet:
 君子之心不胜其小，而气量涵盖一世。 --> 君 子 之 心 不 胜 其 小 ， 而 气 量 涵 盖 一 世 。
 ```
 
+## Mixed casing words
+`-segment_case` feature enables tokenizer to segment words in order to restore in the process of  detokenization correct casing for mixed casing words.
+Tokenizer with this option splits words into segments so all letters in every segment are either lowercased, or uppercased, or first letter is uppercases and rest are lowercased
+```text
+WiFi --> Wi￨C Fi￨C
+TVs --> Tv￨C s￨l
+```
+
 ## BPE
 
 OpenNMT's BPE module fully supports the [original BPE](https://github.com/rsennrich/subword-nmt) as default mode:
